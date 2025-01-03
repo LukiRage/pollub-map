@@ -1,0 +1,23 @@
+{
+  "map": {
+    "image": "/assets/images/map.png",
+    "alt": "Mapa kampusu z oznaczeniami budynków",
+    "name": "campus-map",
+    "areas": [
+      {
+        "id": 1,
+        "shape": "circle",
+        "coords": [150, 120, 20],
+        "title": "Budynek 1",
+        "description": "To jest opis budynku 1. Zawiera sale wykładowe i laboratoria."
+      },
+      {
+        "id": 2,
+        "shape": "rect",
+        "coords": [200, 180, 250, 230],
+        "title": "Budynek 2",
+        "description": "To jest opis budynku 2. Znajdują się tu biura administracyjne."
+      }
+    ]
+  }
+}
