@@ -6896,9 +6896,10 @@ pkg-up@^3.1.0:
   version "0.1.0"
   dependencies:
     cra-template "1.2.0"
-    pollub-map "file:../../../../AppData/Local/Yarn/Cache/v6/npm-pollub-map-0.1.0-9e16b559-47d9-4694-9759-7b6efb1918af-1735899892598/node_modules/pollub-map"
+    pollub-map "file:../../../../AppData/Local/Yarn/Cache/v6/npm-pollub-map-0.1.0-e659c267-9adb-4c47-b070-e75ab2df099a-1735903461462/node_modules/pollub-map"
     react "^19.0.0"
     react-dom "^19.0.0"
+    react-image-mapper "^0.0.15"
     react-scripts "5.0.1"
     web-vitals "^4.2.4"
 
@@ -7667,6 +7668,11 @@ react-fast-compare@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
+
+react-icons@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-5.4.0.tgz#443000f6e5123ee1b21ea8c0a716f6e7797f7416"
+  integrity sha512-7eltJxgVt7X64oHh6wSWNwwbKTCtMfK35hcjvJS0yxEAhPM8oUKdS3+kqaW1vicIltw+kR2unHaa12S9pPALoQ==
 
 react-image-mapper@^0.0.15:
   version "0.0.15"
