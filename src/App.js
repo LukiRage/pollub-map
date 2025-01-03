@@ -5,7 +5,7 @@ import AccessibilityTools from './components/AccessibilityTools';
 import './styles/accessibility.css';
 import './styles/colorblind.css';
 import './styles/dark-mode.css';
-import './styles/high-contrast.css';
+import './styles/contrast-modes.css';
 
 function App() {
   return (
