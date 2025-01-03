@@ -25,7 +25,6 @@ const Map = () => {
             strokeColor: "rgba(0, 0, 0, 0.8)",
           })),
         }}
-        width={1000} // Rozmiar obrazu
         onClick={(area) => {
           console.log(`Clicked on area: ${area.title}`);
           handleAreaClick(area);
