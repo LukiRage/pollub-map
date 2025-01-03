@@ -6,28 +6,59 @@
     "areas": [
       {
         "id": 1,
-        "shape": "circle",
-        "coords": [150, 120, 20],
-        "title": "Budynek 1",
-        "description": "To jest opis budynku 1. Zawiera sale wykładowe i laboratoria.",
-        "address": "ul. Akademicka 1, 20-618 Lublin"
+        "shape": "poly",
+        "coords": 
+        [510, 495, 
+        510, 555, 
+        450, 600, 
+        377, 540, 
+        435, 485,
+        455, 505,
+        485, 480],
+        "title": "Budynek Wydziału Mechanicznego",
+        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
+        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
       },
       {
         "id": 2,
-        "shape": "rect",
-        "coords": [200, 180, 250, 230],
-        "title": "Budynek 2",
-        "description": "To jest opis budynku 2. Znajdują się tu biura administracyjne.",
-        "address": "ul. Nadbystrzycka 2, 20-618 Lublin"
+        "shape": "poly",
+        "coords": 
+        [645, 495, 
+        642, 535, 
+        550, 605, 
+        525, 590, 
+        525, 545,
+        620, 475],
+        "title": "Budynek WEII",
+        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
+        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
       },
       {
         "id": 3,
         "shape": "poly",
-        "coords": [300, 200, 350, 250, 300, 300, 250, 250],
-        "title": "Budynek 3",
-        "description": "To jest opis budynku 3. Znajdują się tu sale konferencyjne.",
-        "address": "ul. Głęboka 3, 20-618 Lublin"
+        "coords": 
+        [655, 435, 
+        610, 465, 
+        560, 430, 
+        598, 397],
+        "title": "Budynek WEII",
+        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
+        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
+      },
+      {
+        "id": 4,
+        "shape": "poly",
+        "coords": 
+        [720, 450, 
+        690, 470, 
+        655, 430, 
+        670, 400,
+        705, 410],
+        "title": "Budynek WEII",
+        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
+        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
       }
+
     ]
   }
 }
