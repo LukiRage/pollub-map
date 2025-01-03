@@ -55,9 +55,10 @@
     border: 2px solid currentColor !important;
 }
 
-.contrast-yellow-black .popup,
+.contrast-yellow-black .popup {
+    background-color: #ffff00 !important;
+}
+
 .contrast-black-yellow .popup {
-    background-color: inherit !important;
-    color: inherit !important;
-    border: 2px solid currentColor !important;
+    background-color: #000000 !important;
 }
