@@ -1,0 +1,63 @@
+/* Biały tekst na czarnym tle */
+.contrast-white-black {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.contrast-white-black button,
+.contrast-white-black a,
+.contrast-white-black .accessibility-tools {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+/* Czarny tekst na żółtym tle */
+.contrast-yellow-black {
+    background-color: #ffff00 !important;
+    color: #000000 !important;
+}
+
+.contrast-yellow-black button,
+.contrast-yellow-black a,
+.contrast-yellow-black .accessibility-tools {
+    background-color: #ffff00 !important;
+    color: #000000 !important;
+    border: 2px solid #000000 !important;
+}
+
+/* Żółty tekst na czarnym tle */
+.contrast-black-yellow {
+    background-color: #000000 !important;
+    color: #ffff00 !important;
+}
+
+.contrast-black-yellow button,
+.contrast-black-yellow a,
+.contrast-black-yellow .accessibility-tools {
+    background-color: #000000 !important;
+    color: #ffff00 !important;
+    border: 2px solid #ffff00 !important;
+}
+
+/* Wspólne style dla wszystkich trybów kontrastu */
+.contrast-white-black svg,
+.contrast-yellow-black svg,
+.contrast-black-yellow svg {
+    fill: currentColor;
+}
+
+.contrast-white-black .popup,
+.contrast-yellow-black .popup,
+.contrast-black-yellow .popup {
+    background-color: inherit !important;
+    color: inherit !important;
+    border: 2px solid currentColor !important;
+}
+
+.contrast-yellow-black .popup,
+.contrast-black-yellow .popup {
+    background-color: inherit !important;
+    color: inherit !important;
+    border: 2px solid currentColor !important;
+}

@@ -1,11 +1,33 @@
 .dark-mode {
     background-color: #121212 !important;
-    color: #e0e0e0 !important;
+    color: #ffffff !important;
 }
 
 .dark-mode button,
 .dark-mode a {
-    color: #03dac5 !important;
-    /* Kontrastowy kolor */
+    color: #ffffff !important;
     background: #333 !important;
+}
+
+.dark-mode svg,
+.dark-mode .font-icon {
+    color: #ffffff !important;
+}
+
+.dark-mode .accessibility-tools {
+    background: #1e1e1e;
+    border-color: #333;
+}
+
+.dark-mode .popup {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea {
+    background-color: #333 !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
 }
