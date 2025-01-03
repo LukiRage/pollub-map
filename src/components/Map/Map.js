@@ -3,7 +3,7 @@ import ImageMapper from "react-image-mapper";
 import config from "./config.json";
 import Popup from "./Popup";
 import "./Map.css";
-import mapImage from "../../assets/images/map.png";
+import mapImage from "../../assets/images/map.jpg";
 
 
 const Map = () => {
