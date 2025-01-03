@@ -1,0 +1,31 @@
+.accessibility-tools {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accessibility-tools h3,
+.accessibility-tools h4 {
+    margin: 0 0 10px;
+}
+
+.accessibility-tools button {
+    margin: 5px;
+    padding: 5px 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accessibility-tools button:hover {
+    background: #0056b3;
+}

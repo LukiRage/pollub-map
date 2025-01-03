@@ -1,0 +1,12 @@
+.high-contrast {
+    background-color: #000 !important;
+    color: #fff !important;
+    filter: contrast(2);
+}
+
+.high-contrast button,
+.high-contrast a {
+    color: #ffff00 !important;
+    /* Jasnożółty dla podkreślenia */
+    background: #000 !important;
+}

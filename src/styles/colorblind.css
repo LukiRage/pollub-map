@@ -1,0 +1,4 @@
+.colorblind-mode {
+    filter: grayscale(100%) !important;
+    /* Usunięcie koloru */
+}

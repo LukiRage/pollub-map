@@ -1,0 +1,11 @@
+.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-mode button,
+.dark-mode a {
+    color: #03dac5 !important;
+    /* Kontrastowy kolor */
+    background: #333 !important;
+}
