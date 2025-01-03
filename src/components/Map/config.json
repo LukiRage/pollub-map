@@ -9,14 +9,24 @@
         "shape": "circle",
         "coords": [150, 120, 20],
         "title": "Budynek 1",
-        "description": "To jest opis budynku 1. Zawiera sale wykładowe i laboratoria."
+        "description": "To jest opis budynku 1. Zawiera sale wykładowe i laboratoria.",
+        "address": "ul. Akademicka 1, 20-618 Lublin"
       },
       {
         "id": 2,
         "shape": "rect",
         "coords": [200, 180, 250, 230],
         "title": "Budynek 2",
-        "description": "To jest opis budynku 2. Znajdują się tu biura administracyjne."
+        "description": "To jest opis budynku 2. Znajdują się tu biura administracyjne.",
+        "address": "ul. Nadbystrzycka 2, 20-618 Lublin"
+      },
+      {
+        "id": 3,
+        "shape": "poly",
+        "coords": [300, 200, 350, 250, 300, 300, 250, 250],
+        "title": "Budynek 3",
+        "description": "To jest opis budynku 3. Znajdują się tu sale konferencyjne.",
+        "address": "ul. Głęboka 3, 20-618 Lublin"
       }
     ]
   }

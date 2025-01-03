@@ -39,6 +39,7 @@ const Map = () => {
         <Popup
           title={selectedArea.title}
           description={selectedArea.description}
+          address={selectedArea.address}
           onClose={() => setSelectedArea(null)}
         />
       )}
