@@ -1,12 +1,16 @@
 .map-container {
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    height: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    aspect-ratio: 16/9;
 }
 
 .map-image {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
     display: block;
     pointer-events: auto;
     /* Pozwala na interakcję z mapą */
@@ -35,4 +39,36 @@
     border: none;
     font-size: 20px;
     cursor: pointer;
+}
+
+/* Style dla trybu ciemnego */
+.dark-mode .popup {
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode .popup .close-btn {
+    color: #e0e0e0;
+}
+
+/* Style dla wysokiego kontrastu */
+.high-contrast .popup {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.high-contrast .popup .close-btn {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        aspect-ratio: 4/3;
+    }
+    
+    .popup {
+        width: 95%;
+        padding: 15px;
+    }
 }
