@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './AccessibilityTools.css';
+import { FaSun, FaMoon, FaEye, FaAdjust, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const AccessibilityTools = () => {
   const [fontSize, setFontSize] = useState('normal');
-  const [theme, setTheme] = useState('');
+  const [visualMode, setVisualMode] = useState('');
+  const [isMinimized, setIsMinimized] = useState(false);
 
   const handleFontSizeChange = (size) => {
     const appElement = document.querySelector('.App');
@@ -14,39 +16,70 @@ const AccessibilityTools = () => {
     setFontSize(size);
   };
 
-  const handleThemeChange = (newTheme) => {
-  const body = document.body;
-  const appElement = document.querySelector('.App');
-  
-  body.classList.remove('dark-mode', 'high-contrast', 'colorblind-mode');
-  appElement.classList.remove('dark-mode', 'high-contrast', 'colorblind-mode');
-  
-  if (newTheme) {
-    body.classList.add(newTheme);
-    appElement.classList.add(newTheme);
-  }
-  setTheme(newTheme);
-};
-;
-
+  const handleVisualModeChange = (newMode) => {
+    const body = document.body;
+    const appElement = document.querySelector('.App');
+    
+    // Usuń wszystkie klasy trybów
+    body.classList.remove('dark-mode', 'colorblind-mode', 'contrast-yellow-black', 'contrast-black-yellow');
+    appElement.classList.remove('dark-mode', 'colorblind-mode', 'contrast-yellow-black', 'contrast-black-yellow');
+    
+    if (newMode) {
+      body.classList.add(newMode);
+      appElement.classList.add(newMode);
+    }
+    setVisualMode(newMode);
+  };
 
   return (
-    <div className="accessibility-tools">
-      <h3>Narzędzia dostępności</h3>
-      <div>
-        <h4>Rozmiar czcionki:</h4>
-        <button onClick={() => handleFontSizeChange('font-size-small')}>Mała</button>
-        <button onClick={() => handleFontSizeChange('normal')}>Normalna</button>
-        <button onClick={() => handleFontSizeChange('font-size-large')}>Duża</button>
-        <button onClick={() => handleFontSizeChange('font-size-extra-large')}>Bardzo duża</button>
-      </div>
-      <div>
-        <h4>Tryb wizualny:</h4>
-        <button onClick={() => handleThemeChange('')}>Domyślny</button>
-        <button onClick={() => handleThemeChange('dark-mode')}>Ciemny</button>
-        <button onClick={() => handleThemeChange('high-contrast')}>Wysoki kontrast</button>
-        <button onClick={() => handleThemeChange('colorblind-mode')}>Tryb daltonisty</button>
-      </div>
+    <div className={`accessibility-tools ${isMinimized ? 'minimized' : ''}`}>
+      <button 
+        className="toggle-button"
+        onClick={() => setIsMinimized(!isMinimized)}
+        aria-label={isMinimized ? "Rozwiń panel" : "Zwiń panel"}
+      >
+        {isMinimized ? <FaChevronRight /> : <FaChevronLeft />}
+      </button>
+      
+      {!isMinimized && (
+        <>
+          <h3>Narzędzia dostępności</h3>
+          <div className="font-size-controls">
+            <h4>Rozmiar czcionki:</h4>
+            <div className="button-group">
+              <button onClick={() => handleFontSizeChange('font-size-small')} aria-label="Mała czcionka">
+                <span className="font-icon small">A</span>
+              </button>
+              <button onClick={() => handleFontSizeChange('normal')} aria-label="Normalna czcionka">
+                <span className="font-icon medium">A</span>
+              </button>
+              <button onClick={() => handleFontSizeChange('font-size-large')} aria-label="Duża czcionka">
+                <span className="font-icon large">A</span>
+              </button>
+            </div>
+          </div>
+          <div className="visual-mode-controls">
+            <h4>Tryb wyświetlania:</h4>
+            <div className="button-group">
+              <button onClick={() => handleVisualModeChange('')} aria-label="Tryb domyślny">
+                <FaSun />
+              </button>
+              <button onClick={() => handleVisualModeChange('dark-mode')} aria-label="Tryb ciemny">
+                <FaMoon />
+              </button>
+              <button onClick={() => handleVisualModeChange('contrast-yellow-black')} aria-label="Czarny tekst na żółtym tle">
+                <FaAdjust />
+              </button>
+              <button onClick={() => handleVisualModeChange('contrast-black-yellow')} aria-label="Żółty tekst na czarnym tle">
+                <FaAdjust style={{ transform: 'rotate(90deg)' }} />
+              </button>
+              <button onClick={() => handleVisualModeChange('colorblind-mode')} aria-label="Tryb daltonisty">
+                <FaEye />
+              </button>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };

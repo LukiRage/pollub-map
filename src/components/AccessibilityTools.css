@@ -4,8 +4,8 @@
     right: 10px;
     background: #fff;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 8px;
+    padding: 15px;
     z-index: 1000;
     font-family: Arial, sans-serif;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -14,18 +14,109 @@
 .accessibility-tools h3,
 .accessibility-tools h4 {
     margin: 0 0 10px;
+    font-size: 1rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
 }
 
 .accessibility-tools button {
-    margin: 5px;
-    padding: 5px 10px;
-    background: #007bff;
-    color: #fff;
-    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .accessibility-tools button:hover {
-    background: #0056b3;
+    background: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.font-icon {
+    font-weight: bold;
+}
+
+.font-icon.small {
+    font-size: 14px;
+}
+
+.font-icon.medium {
+    font-size: 18px;
+}
+
+.font-icon.large {
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    .accessibility-tools {
+        top: 5px;
+        right: 5px;
+        padding: 10px;
+    }
+    
+    .accessibility-tools button {
+        width: 35px;
+        height: 35px;
+        padding: 6px;
+    }
+}
+
+/* Style dla trybu ciemnego */
+.dark-mode .accessibility-tools {
+    background: #1e1e1e;
+    border-color: #333;
+}
+
+.dark-mode .accessibility-tools h3,
+.dark-mode .accessibility-tools h4 {
+    color: #e0e0e0;
+}
+
+.dark-mode .accessibility-tools button {
+    background: #333;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+.dark-mode .accessibility-tools button:hover {
+    background: #444;
+}
+
+/* Style dla wysokiego kontrastu */
+.high-contrast .accessibility-tools {
+    background: #000;
+    border-color: #fff;
+}
+
+.high-contrast .accessibility-tools h3,
+.high-contrast .accessibility-tools h4 {
+    color: #fff;
+}
+
+.high-contrast .accessibility-tools button {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.high-contrast .accessibility-tools button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.high-contrast .accessibility-tools button svg,
+.high-contrast .accessibility-tools button .font-icon {
+    color: inherit;
 }
