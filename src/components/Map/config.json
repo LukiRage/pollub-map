@@ -7,236 +7,131 @@
       {
         "id": 1,
         "shape": "poly",
-        "coords": 
-        [510, 495, 
-        510, 555, 
-        450, 600, 
-        377, 540, 
-        435, 485,
-        455, 505,
-        485, 480],
-        "title": "Budynek Wydziału Mechanicznego",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
+        "coords": [510, 495, 510, 555, 450, 600, 377, 540, 435, 485, 455, 505, 485, 480],
+        "title": "Wydział Mechaniczny",
+        "description": "Główny budynek Wydziału Mechanicznego.",
         "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
       },
       {
         "id": 2,
         "shape": "poly",
-        "coords": 
-        [645, 495, 
-        642, 535, 
-        550, 605, 
-        525, 590, 
-        525, 545,
-        620, 475],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
+        "coords": [645, 495, 642, 535, 550, 605, 525, 590, 525, 545, 620, 475],
+        "title": "Wydział Elektrotechniki i Informatyki",
+        "description": "Budynek Wydziału Elektrotechniki i Informatyki.",
+        "address": "ul. Nadbystrzycka 38A, 20-618 Lublin"
       },
       {
         "id": 3,
         "shape": "poly",
-        "coords": 
-        [655, 435, 
-        610, 465, 
-        560, 430, 
-        598, 397],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
+        "coords": [655, 435, 610, 465, 560, 430, 598, 397],
+        "title": "CEN-TECH",
+        "description": "Centrum Innowacji i Zaawansowanych Technologii.",
+        "address": "ul. Nadbystrzycka 38B, 20-618 Lublin"
       },
       {
         "id": 4,
         "shape": "poly",
-        "coords": 
-        [720, 450, 
-        690, 470, 
-        655, 430, 
-        670, 400,
-        705, 410],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
-      },
-      {
-        "id": 15,
-        "shape": "poly",
-        "coords": 
-        [20, 320, 
-        120, 230, 
-        225, 300, 
-        120, 380],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
-      },
-      {
-        "id": 14,
-        "shape": "poly",
-        "coords": 
-        [165, 420, 
-        165, 395, 
-        195, 380,
-        245, 425, 
-        210, 450
-        ],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
-      },
-      {
-        "id": 13,
-        "shape": "poly",
-        "coords": 
-        [250, 480, 
-        250, 445, 
-        300, 400,
-        375, 460,
-        375, 495,
-        325, 530
-        ],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
-      },      
-      {
-        "id": 16,
-        "shape": "poly",
-        "coords": 
-        [225, 165, 
-        430, 15, 
-        650, 172,
-        440, 330
-        ],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
-      },
-      {
-        "id": 11,
-        "shape": "poly",
-        "coords": 
-        [360, 415, 
-        325, 380, 
-        390, 320,
-        435, 350
-        ],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
-      },
-      {
-        "id": 7,
-        "shape": "poly",
-        "coords": 
-        [930, 315, 
-        860, 380, 
-        740, 255,
-        790, 210
-        ],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
-      },
-      {
-        "id": 6,
-        "shape": "poly",
-        "coords": 
-        [720, 350, 
-        765, 310, 
-        765, 290,
-        707, 255,
-        665, 290
-        ],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
-      },
-      {
-        "id": 12,
-        "shape": "poly",
-        "coords": 
-        [415, 485, 
-        445, 460, 
-        385, 410,
-        360, 430
-        ],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
-      },
-      {
-        "id": 10,
-        "shape": "poly",
-        "coords": 
-        [480, 355, 
-        480, 330, 
-        560, 265,
-        580, 285,
-        580, 305,
-        500, 365
-        ],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
-      },
-      {
-        "id": 9,
-        "shape": "poly",
-        "coords": 
-        [615, 325, 
-        585, 310, 
-        580, 280,
-        570, 270,
-        610, 225,
-        637, 245,
-        610, 270,
-        630, 290,
-        630, 310
-        ],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
-      },
-      {
-        "id": 8,
-        "shape": "poly",
-        "coords": 
-        [620, 225, 
-        640, 240, 
-        645, 265,
-        670, 280,
-        715, 250,
-        715, 220,
-        685, 200,
-        660, 220,
-        640, 205
-        ],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
-        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
+        "coords": [720, 450, 690, 470, 655, 430, 670, 400, 705, 410],
+        "title": "Kościół Rzymskokatolicki",
+        "description": "Parafia Przemienienia Pańskiego na terenie kampusu.",
+        "address": "ul. Nadbystrzycka 40, 20-618 Lublin"
       },
       {
         "id": 5,
         "shape": "poly",
-        "coords": 
-        [585, 390, 
-        590, 340, 
-        610, 330,
-        620, 335,
-        660, 305,
-        690, 320,
-        695, 380,
-        625, 410
-        ],
-        "title": "Budynek WEII",
-        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
+        "coords": [585, 390, 590, 340, 610, 330, 620, 335, 660, 305, 690, 320, 695, 380, 625, 410],
+        "title": "Wydział Budownictwa i Architektury",
+        "description": "Budynek Wydziału Budownictwa i Architektury.",
+        "address": "ul. Nadbystrzycka 40, 20-618 Lublin"
+      },
+      {
+        "id": 6,
+        "shape": "poly",
+        "coords": [720, 350, 765, 310, 765, 290, 707, 255, 665, 290],
+        "title": "Stołówka",
+        "description": "Stołówka akademicka.",
+        "address": "ul. Nadbystrzycka 40A, 20-618 Lublin"
+      },
+      {
+        "id": 7,
+        "shape": "poly",
+        "coords": [930, 315, 860, 380, 740, 255, 790, 210],
+        "title": "Domy Studenckie",
+        "description": "Akademiki Politechniki Lubelskiej.",
+        "address": "ul. Nadbystrzycka 42, 20-618 Lublin"
+      },
+      {
+        "id": 8,
+        "shape": "poly",
+        "coords": [620, 225, 640, 240, 645, 265, 670, 280, 715, 250, 715, 220, 685, 200, 660, 220, 640, 205],
+        "title": "Wydział Inżynierii Środowiska",
+        "description": "Budynek Wydziału Inżynierii Środowiska.",
+        "address": "ul. Nadbystrzycka 40B, 20-618 Lublin"
+      },
+      {
+        "id": 9,
+        "shape": "poly",
+        "coords": [615, 325, 585, 310, 580, 280, 570, 270, 610, 225, 637, 245, 610, 270, 630, 290, 630, 310],
+        "title": "Wydział Zarządzania",
+        "description": "Budynek Wydziału Zarządzania.",
+        "address": "ul. Nadbystrzycka 38, 20-618 Lublin"
+      },
+      {
+        "id": 10,
+        "shape": "poly",
+        "coords": [480, 355, 480, 330, 560, 265, 580, 285, 580, 305, 500, 365],
+        "title": "Wydział Matematyki i Informatyki Technicznej",
+        "description": "Budynek Matematyki i Informatyki Technicznej.",
+        "address": "ul. Nadbystrzycka 38, 20-618 Lublin"
+      },
+      {
+        "id": 11,
+        "shape": "poly",
+        "coords": [360, 415, 325, 380, 390, 320, 435, 350],
+        "title": "Rektorat",
+        "description": "Budynek administracyjny Politechniki Lubelskiej.",
+        "address": "ul. Nadbystrzycka 38D, 20-618 Lublin"
+      },
+      {
+        "id": 12,
+        "shape": "poly",
+        "coords": [415, 485, 445, 460, 385, 410, 360, 430],
+        "title": "Spichlerz",
+        "description": "Budynek 'Spichlerz'.",
+        "address": "ul. Nadbystrzycka 38H, 20-618 Lublin"
+      },
+      {
+        "id": 13,
+        "shape": "poly",
+        "coords": [250, 480, 250, 445, 300, 400, 375, 460, 375, 495, 325, 530],
+        "title": "Centrum Innowacji i Zaawansowanych Technologii",
+        "description": "Rdzewiak.",
+        "address": "ul. Nadbystrzycka 36C, 20-618 Lublin"
+      },
+      {
+        "id": 14,
+        "shape": "poly",
+        "coords": [165, 420, 165, 395, 195, 380,245, 425, 210, 450],
+        "title": "ASSPect",
+        "description": "CoE Asspect.",
+        "address": "ul. Nadbystrzycka 36A, 20-618 Lublin"
+      },
+      {
+        "id": 15,
+        "shape": "poly",
+        "coords": [20, 320, 120, 230, 225, 300, 120, 380],
+        "title": "Centrum Sportowe",
+        "description": "Pentagon i hala sportowa.",
+        "address": "ul. Nadbystrzycka 36B, 20-618 Lublin"
+      },
+      {
+        "id": 16,
+        "shape": "poly",
+        "coords": [225, 165, 430, 15, 650, 172, 440, 330],
+        "title": "Tereny Zielone",
+        "description": "Obszar rekreacyjny z boiskami sportowymi i miejscem na odpoczynek.",
         "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
       }
-
-
-
-
     ]
   }
 }
