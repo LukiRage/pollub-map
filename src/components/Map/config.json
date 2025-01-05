@@ -164,7 +164,76 @@
         "title": "Budynek WEII",
         "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
         "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
+      },
+      {
+        "id": 10,
+        "shape": "poly",
+        "coords": 
+        [480, 355, 
+        480, 330, 
+        560, 265,
+        580, 285,
+        580, 305,
+        500, 365
+        ],
+        "title": "Budynek WEII",
+        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
+        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
+      },
+      {
+        "id": 9,
+        "shape": "poly",
+        "coords": 
+        [615, 325, 
+        585, 310, 
+        580, 280,
+        570, 270,
+        610, 225,
+        637, 245,
+        610, 270,
+        630, 290,
+        630, 310
+        ],
+        "title": "Budynek WEII",
+        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
+        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
+      },
+      {
+        "id": 8,
+        "shape": "poly",
+        "coords": 
+        [620, 225, 
+        640, 240, 
+        645, 265,
+        670, 280,
+        715, 250,
+        715, 220,
+        685, 200,
+        660, 220,
+        640, 205
+        ],
+        "title": "Budynek WEII",
+        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
+        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
+      },
+      {
+        "id": 5,
+        "shape": "poly",
+        "coords": 
+        [585, 390, 
+        590, 340, 
+        610, 330,
+        620, 335,
+        660, 305,
+        690, 320,
+        695, 380,
+        625, 410
+        ],
+        "title": "Budynek WEII",
+        "description": "Główny budynek Wydziału Mechanicznego. Znajdują się tu sale wykładowe i laboratoria.",
+        "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
       }
+
 
 
 
