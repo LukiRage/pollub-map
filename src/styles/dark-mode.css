@@ -2,7 +2,20 @@
     background-color: #121212 !important;
     color: #ffffff !important;
 }
-
+.dark-mode .map-legend {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #333;
+}
+.dark-mode span{
+    color: #ffffff;
+}
+.dark-mode h3 {
+    color: #ffffff;
+}
+.dark-mode .legend-item:hover .legend-color {
+    transform: scale(1.1);
+}
 .dark-mode button,
 .dark-mode a {
     color: #ffffff !important;

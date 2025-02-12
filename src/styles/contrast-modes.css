@@ -32,6 +32,15 @@
     color: #ffff00 !important;
 }
 
+.contrast-black-yellow span {
+    color: #ffff00 !important;
+}
+
+.contrast-black-yellow h3 {
+    color: #ffff00 !important;
+}
+
+
 .contrast-black-yellow button,
 .contrast-black-yellow a,
 .contrast-black-yellow .accessibility-tools {
@@ -45,6 +54,14 @@
 .contrast-yellow-black svg,
 .contrast-black-yellow svg {
     fill: currentColor;
+}
+
+.contrast-white-black .map-legend,
+.contrast-yellow-black .map-legend,
+.contrast-black-yellow .map-legend {
+    background-color: inherit !important;
+    color: inherit !important;
+    border: 2px solid currentColor !important;
 }
 
 .contrast-white-black .popup,
