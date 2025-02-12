@@ -56,8 +56,7 @@ const CampusMap = () => {
     <MapContainer 
       center={[51.2355, 22.5490]} 
       zoom={17} 
-      minZoom={17} 
-      maxZoom={19} 
+      minZoom={17}
       maxBounds={bounds} 
       maxBoundsViscosity={1.0}
       style={{ height: '100vh', width: '100%' }}>
