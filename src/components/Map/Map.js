@@ -68,21 +68,21 @@ const Map = () => {
         />
       )}
 
-      <div className="map-legend">
-        <h3>Legenda</h3>
-        <div className="legend-item">
-          <div className="legend-color" style={{ backgroundColor: "rgba(0, 255, 0, 0.3)" }}></div>
-          <span>Obszar budynku</span>
-        </div>
-        <div className="legend-item">
-          <div className="legend-color" style={{ backgroundColor: "rgba(0, 255, 0, 0.5)" }}></div>
-          <span>Obszar wskazany</span>
-        </div>
-        <div className="legend-item">
-          <div className="legend-color" style={{ backgroundColor: "rgba(0, 255, 0, 0.6)" }}></div>
-          <span>Obszar wybrany</span>
-        </div>
-      </div>
+<div className="map-legend">
+  <h3>Legenda</h3>
+  <div className="legend-item">
+    <div className="legend-color" style={{ backgroundColor: "rgba(45, 106, 79, 0.3)" }}></div>
+    <span>Obszar budynku</span>
+  </div>
+  <div className="legend-item">
+    <div className="legend-color" style={{ backgroundColor: "rgba(64, 145, 108, 0.5)" }}></div>
+    <span>Obszar wskazany</span>
+  </div>
+  <div className="legend-item">
+    <div className="legend-color" style={{ backgroundColor: "rgba(82, 183, 136, 0.6)" }}></div>
+    <span>Obszar wybrany</span>
+  </div>
+</div>
     </div>
   );
 };
