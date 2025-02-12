@@ -17,17 +17,17 @@ const Map = () => {
 
     return {
       preFillColor: isSelected 
-        ? "rgba(0, 255, 0, 0.6)"
+        ? "rgba(82, 183, 136, 0.6)"
         : isHovered 
-          ? "rgba(0, 255, 0, 0.5)"
-          : "rgba(0, 255, 0, 0.3)",
+          ? "rgba(64, 145, 108, 0.5)"
+          : "rgba(45, 106, 79, 0.3)",
       strokeColor: isSelected || isHovered 
         ? "rgba(0, 0, 0, 1)"
         : "rgba(0, 0, 0, 0.8)",
       lineWidth: isSelected ? 3 : 2,
       fillColor: isSelected 
-        ? "rgba(0, 255, 0, 0.6)"
-        : "rgba(0, 255, 0, 0.4)",
+        ? "rgba(82, 183, 136, 0.6)"
+        : "rgba(64, 145, 108, 0.5)",
     };
   };
 
