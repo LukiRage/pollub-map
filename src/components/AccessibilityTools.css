@@ -11,10 +11,21 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.accessibility-tools h3,
-.accessibility-tools h4 {
-    margin: 0 0 10px;
-    font-size: 1rem;
+.accessibility-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.toggle-button {
+    flex-shrink: 0;
+}
+
+/* Update existing styles */
+.accessibility-tools h3 {
+    margin: 0;
+    flex-grow: 1;
 }
 
 .button-group {

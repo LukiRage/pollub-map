@@ -33,17 +33,19 @@ const AccessibilityTools = () => {
 
   return (
     <div className={`accessibility-tools ${isMinimized ? 'minimized' : ''}`}>
-      <button 
-        className="toggle-button"
-        onClick={() => setIsMinimized(!isMinimized)}
-        aria-label={isMinimized ? "Rozwiń panel" : "Zwiń panel"}
-      >
-        {isMinimized ? <FaChevronRight /> : <FaChevronLeft />}
-      </button>
+      <div className="accessibility-header">
+        <button 
+          className="toggle-button"
+          onClick={() => setIsMinimized(!isMinimized)}
+          aria-label={isMinimized ? "Rozwiń panel" : "Zwiń panel"}
+        >
+          {isMinimized ? <FaChevronRight /> : <FaChevronLeft />}
+        </button>
+        {!isMinimized && <h3>Narzędzia dostępności</h3>}
+      </div>
       
       {!isMinimized && (
         <>
-          <h3>Narzędzia dostępności</h3>
           <div className="font-size-controls">
             <h4>Rozmiar czcionki:</h4>
             <div className="button-group">
