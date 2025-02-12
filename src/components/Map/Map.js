@@ -8,32 +8,56 @@ import mapImage from "../../assets/images/map.jpg";
 
 const Map = () => {
   const [selectedArea, setSelectedArea] = useState(null);
+  const [hoveredArea, setHoveredArea] = useState(null);
 
-  const handleAreaClick = (area) => {
-    setSelectedArea(area);
+
+  const getAreaStyles = (area) => {
+    const isSelected = selectedArea?.id === area.id;
+    const isHovered = hoveredArea?.id === area.id;
+
+    return {
+      preFillColor: isSelected 
+        ? "rgba(0, 255, 0, 0.6)"
+        : isHovered 
+          ? "rgba(0, 255, 0, 0.5)"
+          : "rgba(0, 255, 0, 0.3)",
+      strokeColor: isSelected || isHovered 
+        ? "rgba(0, 0, 0, 1)"
+        : "rgba(0, 0, 0, 0.8)",
+      lineWidth: isSelected ? 3 : 2,
+      fillColor: isSelected 
+        ? "rgba(0, 255, 0, 0.6)"
+        : "rgba(0, 255, 0, 0.4)",
+    };
+  };
+
+  const mapConfig = {
+    name: config.map.name,
+    areas: config.map.areas.map((area) => ({
+      ...area,
+      ...getAreaStyles(area),
+    })),
   };
 
   return (
     <div className="map-container">
       <ImageMapper
         src={mapImage}
-        map={{
-          name: config.map.name,
-          areas: config.map.areas.map((area) => ({
-            ...area,
-            preFillColor: "rgba(0, 255, 0, 0.4)",
-            strokeColor: "rgba(0, 0, 0, 0.8)",
-          })),
-        }}
+        map={mapConfig}
         onClick={(area) => {
           console.log(`Clicked on area: ${area.title}`);
-          handleAreaClick(area);
+          setSelectedArea(area);
         }}
-        onMouseEnter={(area) => console.log(`Hovered over: ${area.title}`)}
-        onMouseLeave={() => console.log("Mouse left an area")}
+        onMouseEnter={(area) => {
+          console.log(`Hovered over: ${area.title}`);
+          setHoveredArea(area);
+        }}
+        onMouseLeave={() => {
+          console.log("Mouse left an area");
+          setHoveredArea(null);
+        }}
         alt={config.map.alt}
       />
-
 
       {selectedArea && (
         <Popup
@@ -43,7 +67,10 @@ const Map = () => {
           onClose={() => setSelectedArea(null)}
         />
       )}
+      
     </div>
+
+    
   );
 };
 
