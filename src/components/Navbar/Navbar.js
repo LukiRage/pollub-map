@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
         <ul>
           <li><Link to="/" onClick={toggleMenu}>Mapa Główna</Link></li>
-          <li><Link to="/buildings" onClick={toggleMenu}>Budynki</Link></li>
+          <li><Link to="/map_2" onClick={toggleMenu}>Druga Mapa</Link></li>
           <li><Link to="/parking" onClick={toggleMenu}>Parkingi</Link></li>
           <li><Link to="/facilities" onClick={toggleMenu}>Obiekty</Link></li>
         </ul>
