@@ -200,5 +200,16 @@ export const buildingCenters = {
     parking_5: getCenter(buildingCoordinates.parking_5_Coords),
     parking_6: getCenter(buildingCoordinates.parking_6_Coords),
     parking_7: getCenter(buildingCoordinates.parking_7_Coords)
-
 };
+
+export const foodSpots = [
+  { id: 101, name: 'Bar w CIiZT', lat: 51.236150, lng: 22.551200, category: 'gastronomia' },
+  { id: 102, name: 'Bar w Mechanicznym', lat: 51.236850, lng: 22.550000, category: 'gastronomia' },
+  { id: 103, name: 'Stołówka studencka', lat: 51.235100, lng: 22.546800, category: 'gastronomia' }
+];
+
+export const sportsLocations = [
+  { id: 201, name: 'Hala Sportowa', lat: 51.235700, lng: 22.547500, category: 'sport' },
+  { id: 202, name: 'Boisko sportowe', lat: 51.235200, lng: 22.547200, category: 'sport' },
+  { id: 203, name: 'Siłownia DS4', lat: 51.234622, lng: 22.547121, category: 'sport' }
+];

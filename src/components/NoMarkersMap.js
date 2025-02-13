@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Polygon, Marker, Popup, LayersControl, Feature
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import '../styles/map.css';
-import { campusOutline, bounds, buildingCenters } from '../data/mapCoordinates';
+import { campusOutline, bounds, buildingCenters, foodSpots, sportsLocations } from '../data/mapCoordinates';
 
 // Add Material Symbols font
 const fontLink = document.createElement('link');
@@ -13,7 +13,7 @@ document.head.appendChild(fontLink);
 
 const { BaseLayer, Overlay } = LayersControl;
 
-const createCustomIcon = (iconType) => {
+const createCustomIcon = (iconType, isSmall = false) => {
   return L.divIcon({
     html: `<div style="
       background-color: white;
@@ -23,15 +23,15 @@ const createCustomIcon = (iconType) => {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 30px;
-      height: 30px;
+      width: ${isSmall ? '20px' : '30px'};
+      height: ${isSmall ? '20px' : '30px'};
       box-shadow: 0 2px 4px rgba(0,0,0,0.3);">
-      <span class="material-symbols-outlined" style="font-size: 20px;">${iconType}</span>
+      <span class="material-symbols-outlined" style="font-size: ${isSmall ? '14px' : '20px'};">${iconType}</span>
     </div>`,
     className: '',
-    iconSize: [40, 40],
-    iconAnchor: [20, 20],
-    popupAnchor: [0, -20],
+    iconSize: [isSmall ? '30' : '40', isSmall ? '30' : '40'],
+    iconAnchor: [isSmall ? '15' : '20', isSmall ? '15' : '20'],
+    popupAnchor: [0, isSmall ? -15 : -20],
   });
 };
 
@@ -42,7 +42,9 @@ const icons = {
   biblioteka: createCustomIcon('book_2'),
   akademiki: createCustomIcon('home'),
   administracja: createCustomIcon('account_balance'),
-  kościół: createCustomIcon('church')
+  kościół: createCustomIcon('church'),
+  gastronomia: createCustomIcon('restaurant', true),
+  sport: createCustomIcon('sports_and_outdoors')
 };
 
 const buildings = [
@@ -69,7 +71,9 @@ const buildings = [
     { id: 33, name: 'Parking', lat: buildingCenters.parking_4[0], lng: buildingCenters.parking_4[1], category: 'parkingi' },
     { id: 34, name: 'Parking', lat: buildingCenters.parking_5[0], lng: buildingCenters.parking_5[1], category: 'parkingi' },
     { id: 35, name: 'Parking', lat: buildingCenters.parking_6[0], lng: buildingCenters.parking_6[1], category: 'parkingi' },
-    { id: 36, name: 'Parking', lat: buildingCenters.parking_7[0], lng: buildingCenters.parking_7[1], category: 'parkingi' }
+    { id: 36, name: 'Parking', lat: buildingCenters.parking_7[0], lng: buildingCenters.parking_7[1], category: 'parkingi' },
+    ...foodSpots,
+    ...sportsLocations
 ];
 
 const categories = {
@@ -79,7 +83,9 @@ const categories = {
   biblioteka: 'Biblioteka',
   akademiki: 'Akademiki',
   administracja: 'Administracja',
-  kościół: 'Kościół'
+  kościół: 'Kościół',
+  gastronomia: 'Gastronomia',
+  sport: 'Sport i rekreacja'
 };
 
 const ClickHandler = () => {
