@@ -7,7 +7,7 @@
       {
         "id": 1,
         "shape": "poly",
-        "coords": [510, 495, 510, 555, 450, 600, 377, 540, 435, 485, 455, 505, 485, 480],
+        "coords": [376, 530, 376, 545, 454, 600, 509, 555, 509, 497, 480, 480, 455, 499, 433, 485],
         "title": "Wydział Mechaniczny",
         "description": "Główny budynek Wydziału Mechanicznego.",
         "address": "ul. Nadbystrzycka 36, 20-618 Lublin"
@@ -15,7 +15,7 @@
       {
         "id": 2,
         "shape": "poly",
-        "coords": [645, 495, 642, 535, 550, 605, 525, 590, 525, 545, 620, 475],
+        "coords": [524, 544, 524, 585, 547, 607, 639, 533, 641, 492, 604, 469, 584, 485, 592, 490],
         "title": "Wydział Elektrotechniki i Informatyki",
         "description": "Budynek Wydziału Elektrotechniki i Informatyki.",
         "address": "ul. Nadbystrzycka 38A, 20-618 Lublin"
@@ -23,7 +23,7 @@
       {
         "id": 3,
         "shape": "poly",
-        "coords": [655, 435, 610, 465, 560, 430, 598, 397],
+        "coords": [604, 466, 583, 484, 554, 466, 554, 429, 597, 393, 652, 428, 654, 471, 633, 488],
         "title": "CEN-TECH",
         "description": "Centrum Innowacji i Zaawansowanych Technologii.",
         "address": "ul. Nadbystrzycka 38B, 20-618 Lublin"
@@ -31,7 +31,7 @@
       {
         "id": 4,
         "shape": "poly",
-        "coords": [720, 450, 690, 470, 655, 430, 670, 400, 705, 410],
+        "coords": [654, 444, 691, 469, 716, 448, 716, 427, 708, 425, 711, 408, 699, 400, 692, 410, 667, 399, 652, 420],
         "title": "Kościół Rzymskokatolicki",
         "description": "Parafia Przemienienia Pańskiego na terenie kampusu.",
         "address": "ul. Nadbystrzycka 40, 20-618 Lublin"
@@ -39,7 +39,7 @@
       {
         "id": 5,
         "shape": "poly",
-        "coords": [585, 390, 590, 340, 610, 330, 620, 335, 660, 305, 690, 320, 695, 380, 625, 410],
+        "coords": [588, 390, 635, 416, 651, 404, 660, 406, 666, 397, 677, 400, 698, 383, 698, 371, 690, 363, 690, 319,  664, 303, 622, 337, 608, 327, 588, 345],
         "title": "Wydział Budownictwa i Architektury",
         "description": "Budynek Wydziału Budownictwa i Architektury.",
         "address": "ul. Nadbystrzycka 40, 20-618 Lublin"
@@ -47,7 +47,7 @@
       {
         "id": 6,
         "shape": "poly",
-        "coords": [720, 350, 765, 310, 765, 290, 707, 255, 665, 290],
+        "coords": [720, 350, 765, 313, 765, 291, 710, 254, 667, 289, 667, 303, 690, 319, 690, 327],
         "title": "Stołówka",
         "description": "Stołówka akademicka.",
         "address": "ul. Nadbystrzycka 40A, 20-618 Lublin"
@@ -55,7 +55,31 @@
       {
         "id": 7,
         "shape": "poly",
-        "coords": [930, 315, 860, 380, 740, 255, 790, 210],
+        "coords": [747, 268, 747, 228, 765, 209, 790, 223, 790, 272, 778, 282],
+        "title": "Domy Studenckie",
+        "description": "Akademiki Politechniki Lubelskiej.",
+        "address": "ul. Nadbystrzycka 42, 20-618 Lublin"
+      },
+      {
+        "id": 7,
+        "shape": "poly",
+        "coords": [799, 261, 799, 220, 820, 198, 843, 215, 843, 263, 830, 273, 808, 268],
+        "title": "Domy Studenckie",
+        "description": "Akademiki Politechniki Lubelskiej.",
+        "address": "ul. Nadbystrzycka 42, 20-618 Lublin"
+      },
+      {
+        "id": 7,
+        "shape": "poly",
+        "coords": [842, 277, 842, 256, 861, 233, 888, 251, 888, 297, 872, 310],
+        "title": "Domy Studenckie",
+        "description": "Akademiki Politechniki Lubelskiej.",
+        "address": "ul. Nadbystrzycka 42, 20-618 Lublin"
+      },
+      {
+        "id": 7,
+        "shape": "poly",
+        "coords": [839, 275, 860, 300, 863, 338, 848, 351, 818, 338, 818, 297],
         "title": "Domy Studenckie",
         "description": "Akademiki Politechniki Lubelskiej.",
         "address": "ul. Nadbystrzycka 42, 20-618 Lublin"
