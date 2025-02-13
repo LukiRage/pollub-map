@@ -4,6 +4,7 @@ import './App.css';
 import Map from './components/Map/Map';
 import Navbar from './components/Navbar/Navbar';
 import CampusMap from './components/CampusMap';
+import NoMarkersMap from './components/NoMarkersMap';
 import AccessibilityTools from './components/AccessibilityTools';
 import './styles/accessibility.css';
 import './styles/colorblind.css';
@@ -19,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Map mapType="main" />} />
           <Route path="/map_2" element={<CampusMap />} />
-          <Route path="/parking" element={<Map mapType="parking" />} />
+          <Route path="/map_no_markers" element={<NoMarkersMap />} />
           <Route path="/facilities" element={<Map mapType="facilities" />} />
         </Routes>
       </div>
