@@ -44,7 +44,7 @@ const icons = {
   administracja: createCustomIcon('account_balance'),
   kościół: createCustomIcon('church', true),
   gastronomia: createCustomIcon('restaurant', true),
-  sport: createCustomIcon('sports_and_outdoors')
+  sport: createCustomIcon('sports_and_outdoors', true)
 };
 
 const buildings = [
