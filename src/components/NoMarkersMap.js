@@ -42,6 +42,38 @@ const getCenter = (coords) => {
 
 const mechBuildingCenter = getCenter(mechBuildingCoords);
 
+const createCustomIcon = (iconType) => {
+  const iconUrl = `https://fonts.gstatic.com/s/i/materialicons/${iconType}/v12/24px.svg`;
+  
+  return L.divIcon({
+    html: `<div style="
+      background-color: white;
+      border: 2px solid #666;
+      border-radius: 50%;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+      <img src="${iconUrl}" style="width: 20px; height: 20px;" />
+    </div>`,
+    className: '',
+    iconSize: [40, 40],
+    iconAnchor: [20, 20],
+    popupAnchor: [0, -20],
+  });
+};
+
+const icons = {
+  wydziały: createCustomIcon('school'),
+  parkingi: createCustomIcon('local_parking'),
+  biblioteka: createCustomIcon('book'),
+  akademiki: createCustomIcon('home'),
+  administracja: createCustomIcon('account_balance')
+};
+
 const buildings = [
   { id: 1, name: 'Rektorat', lat: 51.2358, lng: 22.5489, category: 'administracja' },
   { id: 2, name: 'Wydział Mechaniczny', lat: mechBuildingCenter[0], lng: mechBuildingCenter[1], category: 'wydziały' },
@@ -49,15 +81,6 @@ const buildings = [
   { id: 4, name: 'Dom Studenta', lat: 51.2339, lng: 22.5475, category: 'akademiki' },
   { id: 5, name: 'Parking', lat: 51.2360, lng: 22.5480, category: 'parkingi' }
 ];
-
-const customIcon = new L.Icon({
-  iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-  shadowSize: [41, 41]
-});
 
 const ClickHandler = () => {
   useMapEvents({
@@ -88,7 +111,11 @@ const NoMarkersMap = () => {
         <Overlay checked name="Budynki">
           <FeatureGroup>
             {buildings.map((building) => (
-              <Marker key={building.id} position={[building.lat, building.lng]} icon={customIcon}>
+              <Marker 
+                key={building.id} 
+                position={[building.lat, building.lng]} 
+                icon={icons[building.category]}
+              >
                 <Popup>{building.name}</Popup>
               </Marker>
             ))}
