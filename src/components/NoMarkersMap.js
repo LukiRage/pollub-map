@@ -46,19 +46,30 @@ const icons = {
 };
 
 const buildings = [
-  { id: 1, name: 'Rektorat PL', lat: buildingCenters.rectorate[0], lng: buildingCenters.rectorate[1], category: 'administracja' },
-  { id: 2, name: 'Wydział Mechaniczny', lat: buildingCenters.mechBuilding[0], lng: buildingCenters.mechBuilding[1], category: 'wydziały' },
-  { id: 3, name: 'Wydział Zarządzania', lat: buildingCenters.managementBuilding[0], lng: buildingCenters.managementBuilding[1], category: 'wydziały' },
-  { id: 4, name: 'Wydział Inżynierii Środowiska', lat: buildingCenters.envEngineeringBuilding[0], lng: buildingCenters.envEngineeringBuilding[1], category: 'wydziały' },
-  { id: 10, name: 'Centrum Innowacji i Zaawansowanych Technologii', lat: buildingCenters.ciBuilding[0], lng: buildingCenters.ciBuilding[1], category: 'sale_dydaktyczne' },
-  { id: 11, name: 'Pentagon', lat: buildingCenters.pentagonBuilding[0], lng: buildingCenters.pentagonBuilding[1], category: 'sale_dydaktyczne' },
-  { id: 20, name: 'Biblioteka', lat: buildingCenters.libraryBuilding[0], lng: buildingCenters.libraryBuilding[1], category: 'biblioteka' },
-  { id: 21, name: 'Kościół', lat: buildingCenters.churchBuilding[0], lng: buildingCenters.churchBuilding[1], category: 'kościół' },
-  { id: 22, name: 'Dom Studenta nr 1', lat: buildingCenters.dorm_1_Building[0], lng: buildingCenters.dorm_1_Building[1], category: 'akademiki' },
-  { id: 23, name: 'Dom Studenta nr 2', lat: buildingCenters.dorm_2_Building[0], lng: buildingCenters.dorm_2_Building[1], category: 'akademiki' },
-  { id: 24, name: 'Dom Studenta nr 3', lat: buildingCenters.dorm_3_Building[0], lng: buildingCenters.dorm_3_Building[1], category: 'akademiki' },
-  { id: 25, name: 'Dom Studenta nr 4', lat: buildingCenters.dorm_4_Building[0], lng: buildingCenters.dorm_4_Building[1], category: 'akademiki' },
-  { id: 30, name: 'Parking', lat: buildingCenters.parking_1[0], lng: buildingCenters.parking_1[1], category: 'parkingi' }
+    { id: 1, name: 'Rektorat PL', lat: buildingCenters.rectorate[0], lng: buildingCenters.rectorate[1], category: 'administracja' },
+    { id: 2, name: 'Wydział Mechaniczny', lat: buildingCenters.mechBuilding[0], lng: buildingCenters.mechBuilding[1], category: 'wydziały' },
+    { id: 3, name: 'Wydział Zarządzania', lat: buildingCenters.managementBuilding[0], lng: buildingCenters.managementBuilding[1], category: 'wydziały' },
+    { id: 4, name: 'Wydział Inżynierii Środowiska', lat: buildingCenters.envEngineeringBuilding[0], lng: buildingCenters.envEngineeringBuilding[1], category: 'wydziały' },
+    { id: 5, name: 'Wydział Budownictwa i Architektury', lat: buildingCenters.architectureBuildingCoords[0], lng: buildingCenters.architectureBuildingCoords[1], category: 'wydziały' },
+    { id: 6, name: 'Wydział Elektrotechniki i Informatyki', lat: buildingCenters.eiiBuilding[0], lng: buildingCenters.eiiBuilding[1], category: 'wydziały' },
+    { id: 7, name: 'Centrum Technologii Informatycznych i Lingwistyki Technicznej', lat: buildingCenters.centechBuilding[0], lng: buildingCenters.centechBuilding[1], category: 'sale_dydaktyczne' },
+    { id: 8, name: 'Centrum Innowacji i Zaawansowanych Technologii', lat: buildingCenters.ciBuilding[0], lng: buildingCenters.ciBuilding[1], category: 'sale_dydaktyczne' },
+    { id: 9, name: 'Pentagon', lat: buildingCenters.pentagonBuilding[0], lng: buildingCenters.pentagonBuilding[1], category: 'sale_dydaktyczne' },
+    { id: 10, name: 'Wschodnie Innowacyjne Centrum Architektury', lat: buildingCenters.eicaBuilding[0], lng: buildingCenters.eicaBuilding[1], category: 'sale_dydaktyczne' },
+    { id: 20, name: 'Biblioteka', lat: buildingCenters.libraryBuilding[0], lng: buildingCenters.libraryBuilding[1], category: 'biblioteka' },
+    { id: 21, name: 'Kościół', lat: buildingCenters.churchBuilding[0], lng: buildingCenters.churchBuilding[1], category: 'kościół' },
+    { id: 22, name: 'Dział Spraw Studenckich', lat: buildingCenters.dssBuilding[0], lng: buildingCenters.dssBuilding[1], category: 'administracja' },
+    { id: 23, name: 'Dom Studenta nr 1', lat: buildingCenters.dorm_1_Building[0], lng: buildingCenters.dorm_1_Building[1], category: 'akademiki' },
+    { id: 24, name: 'Dom Studenta nr 2', lat: buildingCenters.dorm_2_Building[0], lng: buildingCenters.dorm_2_Building[1], category: 'akademiki' },
+    { id: 25, name: 'Dom Studenta nr 3', lat: buildingCenters.dorm_3_Building[0], lng: buildingCenters.dorm_3_Building[1], category: 'akademiki' },
+    { id: 26, name: 'Dom Studenta nr 4', lat: buildingCenters.dorm_4_Building[0], lng: buildingCenters.dorm_4_Building[1], category: 'akademiki' },
+    { id: 30, name: 'Parking', lat: buildingCenters.parking_1[0], lng: buildingCenters.parking_1[1], category: 'parkingi' },
+    { id: 31, name: 'Parking', lat: buildingCenters.parking_2[0], lng: buildingCenters.parking_2[1], category: 'parkingi' },
+    { id: 32, name: 'Parking', lat: buildingCenters.parking_3[0], lng: buildingCenters.parking_3[1], category: 'parkingi' },
+    { id: 33, name: 'Parking', lat: buildingCenters.parking_4[0], lng: buildingCenters.parking_4[1], category: 'parkingi' },
+    { id: 34, name: 'Parking', lat: buildingCenters.parking_5[0], lng: buildingCenters.parking_5[1], category: 'parkingi' },
+    { id: 35, name: 'Parking', lat: buildingCenters.parking_6[0], lng: buildingCenters.parking_6[1], category: 'parkingi' },
+    { id: 36, name: 'Parking', lat: buildingCenters.parking_7[0], lng: buildingCenters.parking_7[1], category: 'parkingi' }
 ];
 
 const categories = {
