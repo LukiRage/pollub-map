@@ -38,11 +38,11 @@ const createCustomIcon = (iconType, isSmall = false) => {
 const icons = {
   wydziały: createCustomIcon('school'),
   sale_dydaktyczne: createCustomIcon('group'),
-  parkingi: createCustomIcon('local_parking'),
-  biblioteka: createCustomIcon('book_2'),
+  parkingi: createCustomIcon('local_parking', true),
+  biblioteka: createCustomIcon('book_2', true),
   akademiki: createCustomIcon('home'),
   administracja: createCustomIcon('account_balance'),
-  kościół: createCustomIcon('church'),
+  kościół: createCustomIcon('church', true),
   gastronomia: createCustomIcon('restaurant', true),
   sport: createCustomIcon('sports_and_outdoors')
 };
