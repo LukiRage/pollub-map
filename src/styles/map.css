@@ -1,0 +1,33 @@
+.leaflet-control-layers {
+    position: fixed !important;
+    right: 20px !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background: white;
+    padding: 10px;
+}
+
+.leaflet-control-layers-list {
+    margin-bottom: 0;
+}
+
+.leaflet-control-layers label {
+    text-align: left !important;
+    margin-left: 5px;
+    padding: 4px 0;
+    display: block !important;
+}
+
+.leaflet-control-layers-selector {
+    margin-right: 8px;
+}
+
+.leaflet-control-layers-base label,
+.leaflet-control-layers-overlays label {
+    display: flex !important;
+    align-items: center;
+}

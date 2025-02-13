@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { MapContainer, TileLayer, Polygon, Marker, Popup, LayersControl, FeatureGroup, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import '../styles/map.css';
 
 const { BaseLayer, Overlay } = LayersControl;
 
@@ -30,6 +31,14 @@ const mechBuildingCoords = [
   [51.236698032751484, 22.55075812339783]
 ];
 
+//Współrzędne prostokąta wyznaczającego budynek Centrum Innowacji i Zaawansowanych Technologii
+const ciBuildingCoords = [
+    [51.23665772849758, 22.5509512424469],
+    [51.236321858342066, 22.550479173660282],
+    [51.235730720912976, 22.55149841308594],
+    [51.23605987791862, 22.55198121070862]
+];
+
 // Obliczenie środka prostokąta
 const getCenter = (coords) => {
   let latSum = 0, lngSum = 0;
@@ -41,6 +50,7 @@ const getCenter = (coords) => {
 };
 
 const mechBuildingCenter = getCenter(mechBuildingCoords);
+const ciBuildingCenter = getCenter(ciBuildingCoords);
 
 const createCustomIcon = (iconType) => {
   const iconUrl = `https://fonts.gstatic.com/s/i/materialicons/${iconType}/v12/24px.svg`;
@@ -68,6 +78,7 @@ const createCustomIcon = (iconType) => {
 
 const icons = {
   wydziały: createCustomIcon('school'),
+  sale_dydaktyczne: createCustomIcon('group'),
   parkingi: createCustomIcon('local_parking'),
   biblioteka: createCustomIcon('book'),
   akademiki: createCustomIcon('home'),
@@ -77,10 +88,20 @@ const icons = {
 const buildings = [
   { id: 1, name: 'Rektorat', lat: 51.2358, lng: 22.5489, category: 'administracja' },
   { id: 2, name: 'Wydział Mechaniczny', lat: mechBuildingCenter[0], lng: mechBuildingCenter[1], category: 'wydziały' },
-  { id: 3, name: 'Biblioteka', lat: 51.2345, lng: 22.5468, category: 'biblioteka' },
-  { id: 4, name: 'Dom Studenta', lat: 51.2339, lng: 22.5475, category: 'akademiki' },
-  { id: 5, name: 'Parking', lat: 51.2360, lng: 22.5480, category: 'parkingi' }
+  { id: 3, name: 'Centrum Innowacji i Zaawansowanych Technologii', lat: ciBuildingCenter[0], lng: ciBuildingCenter[1], category: 'sale_dydaktyczne' },
+  { id: 4, name: 'Biblioteka', lat: 51.2345, lng: 22.5468, category: 'biblioteka' },
+  { id: 5, name: 'Dom Studenta', lat: 51.2339, lng: 22.5475, category: 'akademiki' },
+  { id: 6, name: 'Parking', lat: 51.2360, lng: 22.5480, category: 'parkingi' }
 ];
+
+const categories = {
+  wydziały: 'Wydziały',
+  sale_dydaktyczne: 'Sale dydaktyczne',
+  parkingi: 'Parkingi',
+  biblioteka: 'Biblioteka',
+  akademiki: 'Akademiki',
+  administracja: 'Administracja'
+};
 
 const ClickHandler = () => {
   useMapEvents({
@@ -108,19 +129,24 @@ const NoMarkersMap = () => {
         <Overlay checked name="Obrys kampusu">
           <Polygon positions={campusOutline} pathOptions={{ color: 'blue', fillColor: 'transparent', fillOpacity: 1.0 }} />
         </Overlay>
-        <Overlay checked name="Budynki">
-          <FeatureGroup>
-            {buildings.map((building) => (
-              <Marker 
-                key={building.id} 
-                position={[building.lat, building.lng]} 
-                icon={icons[building.category]}
-              >
-                <Popup>{building.name}</Popup>
-              </Marker>
-            ))}
-          </FeatureGroup>
-        </Overlay>
+        
+        {Object.entries(categories).map(([category, label]) => (
+          <Overlay checked key={category} name={label}>
+            <FeatureGroup>
+              {buildings
+                .filter(building => building.category === category)
+                .map((building) => (
+                  <Marker 
+                    key={building.id} 
+                    position={[building.lat, building.lng]} 
+                    icon={icons[building.category]}
+                  >
+                    <Popup>{building.name}</Popup>
+                  </Marker>
+                ))}
+            </FeatureGroup>
+          </Overlay>
+        ))}
       </LayersControl>
     </MapContainer>
   );
