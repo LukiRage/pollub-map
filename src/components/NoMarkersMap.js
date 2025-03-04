@@ -72,8 +72,8 @@ const buildings = [
     { id: 34, name: 'Parking', lat: buildingCenters.parking_5[0], lng: buildingCenters.parking_5[1], category: 'parkingi' },
     { id: 35, name: 'Parking', lat: buildingCenters.parking_6[0], lng: buildingCenters.parking_6[1], category: 'parkingi' },
     { id: 36, name: 'Parking', lat: buildingCenters.parking_7[0], lng: buildingCenters.parking_7[1], category: 'parkingi' },
-    ...foodSpots,
-    ...sportsLocations
+    // ...foodSpots,
+    // ...sportsLocations
 ];
 
 const categories = {
@@ -84,8 +84,20 @@ const categories = {
   akademiki: 'Akademiki',
   administracja: 'Administracja',
   kościół: 'Kościół',
-  gastronomia: 'Gastronomia',
-  sport: 'Sport i rekreacja'
+  // gastronomia: 'Gastronomia',
+  // sport: 'Sport i rekreacja'
+};
+
+const categoryIcons = {
+  wydziały: 'school',
+  sale_dydaktyczne: 'group',
+  parkingi: 'local_parking',
+  biblioteka: 'book_2',
+  akademiki: 'home',
+  administracja: 'account_balance',
+  kościół: 'church',
+  gastronomia: 'restaurant',
+  sport: 'sports_and_outdoors'
 };
 
 const ClickHandler = () => {
@@ -111,12 +123,13 @@ const NoMarkersMap = () => {
         <BaseLayer checked name="Mapa podstawowa">
           <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" bounds={bounds} />
         </BaseLayer>
+        
         <Overlay checked name="Obrys kampusu">
           <Polygon positions={campusOutline} pathOptions={{ color: 'blue', fillColor: 'transparent', fillOpacity: 1.0 }} />
         </Overlay>
-        
+
         {Object.entries(categories).map(([category, label]) => (
-          <Overlay checked key={category} name={label}>
+          <Overlay checked key={category} name={`<span class="icon-category"><span class="material-symbols-outlined">${categoryIcons[category]}</span> ${label}</span>`}>
             <FeatureGroup>
               {buildings
                 .filter(building => building.category === category)

@@ -35,3 +35,24 @@
     display: flex !important;
     align-items: center;
 }
+
+.leaflet-control-layers label {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+}
+
+.leaflet-control-layers-selector {
+    margin-right: 4px;
+    transform: scale(1.2);
+}
+
+.icon-category {
+    gap: 6px;
+}
+
+.icon-category .material-symbols-outlined {
+    font-size: 18px;
+    color: #666;
+}
