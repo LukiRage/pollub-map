@@ -10,6 +10,10 @@ const Map = () => {
   const [selectedArea, setSelectedArea] = useState(null);
   const [hoveredArea, setHoveredArea] = useState(null);
 
+  const uniqueAreasForLegend = config.map.areas.filter((area, index, self) =>
+    index === self.findIndex((a) => a.id === area.id && a.title)
+  ).filter(area => area.title); // Only show areas with titles
+
 
   const getAreaStyles = (area) => {
     const isSelected = selectedArea?.id === area.id;
@@ -69,20 +73,26 @@ const Map = () => {
       )}
 
 <div className="map-legend">
-  <h3>Legenda</h3>
-  <div className="legend-item">
-    <div className="legend-color" style={{ backgroundColor: "rgba(45, 106, 79, 0.3)" }}></div>
-    <span>Obszar budynku</span>
-  </div>
-  <div className="legend-item">
-    <div className="legend-color" style={{ backgroundColor: "rgba(64, 145, 108, 0.5)" }}></div>
-    <span>Obszar wskazany</span>
-  </div>
-  <div className="legend-item">
-    <div className="legend-color" style={{ backgroundColor: "rgba(82, 183, 136, 0.6)" }}></div>
-    <span>Obszar wybrany</span>
-  </div>
-</div>
+        <h3>Legenda</h3>
+        {uniqueAreasForLegend.map((area) => (
+          <div 
+            key={area.id} 
+            className="legend-item"
+          >
+            <div 
+              className="legend-color" 
+              style={{ 
+                backgroundColor: hoveredArea?.id === area.id
+                  ? "rgba(64, 145, 108, 0.5)"
+                  : selectedArea?.id === area.id
+                    ? "rgba(82, 183, 136, 0.6)"
+                    : "rgba(45, 106, 79, 0.3)"
+              }}
+            />
+            <span>{area.id}. {area.title}</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
