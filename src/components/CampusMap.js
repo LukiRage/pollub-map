@@ -55,6 +55,7 @@ const CampusMap = () => {
         bounds={bounds} 
       />
       <ClickHandler setPoints={setPoints} />
+      <Polygon positions={mask} pathOptions={{ color: 'gray', fillColor: 'gray', fillOpacity: 0.7, stroke: false }} />
     </MapContainer>
   );
 };

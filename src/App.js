@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <AccessibilityTools />
+        {/* <AccessibilityTools /> */}
         <Navbar />
         <Routes>
           <Route path="/" element={<Map mapType="main" />} />
